@@ -1,5 +1,12 @@
 <?php
 
+    $i = 1;
+
+    while($i <= 10) {
+        echo $i."<br>";
+        $i++;
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +17,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>test</h1>
-    <h1>test</h1>
+    
 </body>
 </html>
