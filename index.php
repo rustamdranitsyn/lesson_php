@@ -12,15 +12,44 @@
 // $number = count($name);
 // echo $number;
 
-$birth = [
-    "Thomas"=>"1980-11-18",
-    "John"=>"1992-04-28"
-];
-foreach ($birth as $k=>$v)
-    echo "$k Родился $v <br>";
+// while ($i < 32) {
+//     echo $i++;
+// }
+
+// $x = 1;
+// do {
+//     echo $x;
+// }
+// while ($x++<10);
+
+// for ($x=0; $x++<10;) 
+//     echo $x;
+
+// $birth = [
+//     "Thomas"=>"1980-11-18",
+//     "John"=>"1992-04-28"
+// ];
+// foreach ($birth as $k=>$v)
+//     echo "$k Родился $v <br>";
+
+// function myFSqr($n) {
+//     return $n *$n;
+// }
+// $value = myFSqr(5);
+// echo $value;
+
+    // function funcCount() {
+    //     static $count = 0;
+    //     $count++;
+    //     echo $count;
+    // }
+    // for ($i = 0; $i<5; $i++)
+    // funcCount();
+
 
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,6 +59,13 @@ foreach ($birth as $k=>$v)
     <title>Document</title>
 </head>
 <body>
-    
+
+<form action="" method="post">
+    <p>Ваше имя: <input type="text" name="name"> </p>
+    <p>Ваш возраст: <input type="text" name="age"></p>
+    <p><input type="submit"></p>
+</form>
+Привет <?php echo htmlspecialchars($_POST['name']); ?>.
+Вам <?php echo htmlspecialchars($_POST['age']); ?> лет.
 </body>
 </html>
